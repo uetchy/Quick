@@ -15,14 +15,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        qrView.image = {
-            var qrCode = QRCode("http://github.com/aschuch/QRCode")!
-            qrCode.size = self.qrView.bounds.size
-            qrCode.errorCorrection = .High
-            return qrCode.image
-        }()
     }
 
     override func didReceiveMemoryWarning() {

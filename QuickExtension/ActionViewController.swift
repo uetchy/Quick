@@ -14,6 +14,7 @@ import Contacts
 class ActionViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var statusIndicator: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,7 @@ class ActionViewController: UIViewController {
                         let content = try Data(contentsOf: target as! URL)
                         self.showQRCode(content)
                     } catch {
+                        self.statusIndicator.text = "Failed to load file URL"
                         NSLog("Failed to load file URL")
                     }
                 })
@@ -94,6 +96,7 @@ class ActionViewController: UIViewController {
     
     func showQRCode(_ data: Any) {
         weak var weakImageView = self.imageView
+        weak var weakStatusIndicator = self.statusIndicator
         OperationQueue.main.addOperation {
             if let strongImageView = weakImageView {
                 strongImageView.image = {
@@ -117,6 +120,9 @@ class ActionViewController: UIViewController {
                     
                     qrCode!.size = strongImageView.bounds.size
                     qrCode!.errorCorrection = .Low
+                    
+                    weakStatusIndicator?.text = "Scan this code to share"
+                    
                     return qrCode!.image
                 }()
             }
