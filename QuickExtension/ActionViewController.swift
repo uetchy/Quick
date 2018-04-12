@@ -60,7 +60,7 @@ class ActionViewController: UIViewController {
                             NSLog("Failed to handle VCard")
                         }
                     }
-                     
+                    
                 })
                 break
             } else if provider.hasItemConformingToTypeIdentifier(kUTTypeHTML as String) {

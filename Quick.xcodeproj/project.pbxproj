@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		998C2ABE2065C8B8001F6C98 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E701E020621860007A578D /* QRCode.framework */; };
-		99E470C020724B7800AF6280 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E470BF20724B7800AF6280 /* Media.xcassets */; };
+		99E470C020724B7800AF6280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E470BF20724B7800AF6280 /* Assets.xcassets */; };
 		99E701AE20621469007A578D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E701AD20621469007A578D /* AppDelegate.swift */; };
 		99E701B020621469007A578D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E701AF20621469007A578D /* ViewController.swift */; };
 		99E701B32062146A007A578D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E701B12062146A007A578D /* Main.storyboard */; };
@@ -65,7 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		99E470BF20724B7800AF6280 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		99E470BF20724B7800AF6280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99E701AA20621469007A578D /* Quick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E701AD20621469007A578D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99E701AF20621469007A578D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 				99E701AD20621469007A578D /* AppDelegate.swift */,
 				99E701AF20621469007A578D /* ViewController.swift */,
 				99E701B12062146A007A578D /* Main.storyboard */,
-				99E701B42062146A007A578D /* Assets.xcassets */,
 				99E701B62062146A007A578D /* LaunchScreen.storyboard */,
+				99E701B42062146A007A578D /* Assets.xcassets */,
 				99E701B92062146A007A578D /* Info.plist */,
 			);
 			path = Quick;
@@ -160,7 +160,7 @@
 				99E701EA20621CB0007A578D /* ActionViewController.swift */,
 				99E701EC20621CB0007A578D /* MainInterface.storyboard */,
 				99E701EF20621CB0007A578D /* Info.plist */,
-				99E470BF20724B7800AF6280 /* Media.xcassets */,
+				99E470BF20724B7800AF6280 /* Assets.xcassets */,
 			);
 			path = QuickExtension;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E470C020724B7800AF6280 /* Media.xcassets in Resources */,
+				99E470C020724B7800AF6280 /* Assets.xcassets in Resources */,
 				99E701EE20621CB0007A578D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
